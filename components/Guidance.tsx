@@ -12,7 +12,7 @@ const guidanceItems: GuidanceItem[] = [
   {
     id: 2,
     title: 'Preciso de laudo oficial?',
-    summary: 'Não. Conforme a Súmula 598 do STJ, é possível o reconhecimento da isenção mesmo sem laudo oficial, desde que o conjunto probatório (exames, atestados, tomografias) seja robusto para comprovar a moléstia.',
+    summary: 'Não. Conforme a Súmula 598 do STJ, é possível o reconhecimento da isenção mesmo sem laudo oficial, desde que o conjunto probatório (exames, atestados, tomografias) seja robusto para comprovar a doença.',
     iconName: 'Stethoscope'
   },
   {
@@ -24,7 +24,7 @@ const guidanceItems: GuidanceItem[] = [
   {
     id: 4,
     title: 'Diferença: Isenção vs Imunidade',
-    summary: 'Imunidade é limitação constitucional ao poder de tributar. Isenção é dispensa legal do pagamento. Aposentados com moléstia grave têm isenção legal conforme a Lei 7.713/88.',
+    summary: 'Imunidade é limitação constitucional ao poder de tributar. Isenção é dispensa legal do pagamento. Aposentados com doença grave têm isenção legal conforme a Lei 7.713/88.',
     iconName: 'Scale'
   }
 ];

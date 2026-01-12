@@ -36,7 +36,7 @@ const About: React.FC = () => {
             
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
-                Sou advogado atuante principalmente em pedidos de <strong>isenção de Imposto de Renda</strong> sobre proventos de aposentadoria para pessoas portadoras de moléstias graves, conforme previsão legal do artigo 6º, inciso XIV, da Lei 7.713/88.
+                Sou advogado atuante principalmente em pedidos de <strong>isenção de Imposto de Renda</strong> sobre proventos de aposentadoria para pessoas portadoras de doenças graves, conforme previsão legal do artigo 6º, inciso XIV, da Lei 7.713/88.
               </p>
               <p>
                 Meu trabalho é focado em orientar aposentados sobre seus direitos e conduzir todo o processo administrativo ou judicial para garantir que a isenção seja reconhecida da forma mais rápida e segura possível.

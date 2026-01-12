@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <div className="w-16 h-1 bg-accent mx-auto my-6 rounded-full"></div>
         
         <p className="max-w-2xl mx-auto mb-6">
-          Atuação especializada na solicitação de isenção de Imposto de Renda (IR) em benefício de aposentados portadores de moléstia grave. Atendimento online para todo o Brasil.
+          Atuação especializada na isenção de Imposto de Renda (IR) para aposentados portadores de doença grave. Atendimento online para todo o Brasil.
         </p>
 
         <p className="text-sm mb-8">

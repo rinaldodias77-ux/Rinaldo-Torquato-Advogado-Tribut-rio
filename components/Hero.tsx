@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-            Isenção de Imposto de Renda para <span className="text-accent">Aposentados</span> Portadores de Moléstia Grave
+            Isenção de Imposto de Renda para <span className="text-accent">Aposentados</span> Portadores de Doença Grave
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
