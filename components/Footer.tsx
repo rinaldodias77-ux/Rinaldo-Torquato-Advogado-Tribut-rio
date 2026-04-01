@@ -8,6 +8,18 @@ const Footer: React.FC = () => {
     <footer className="bg-primary-dark text-slate-500 py-20 border-t border-slate-800 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="flex flex-col items-center mb-12">
+          <div className="h-20 w-20 md:h-24 md:w-24 mb-6 overflow-hidden rounded-xl shadow-2xl shadow-black/50 border border-slate-800/50 bg-slate-900 flex items-center justify-center">
+            <img 
+              src="/logo.png" 
+              alt="Rinaldo Torquato Logo" 
+              className="h-full w-full object-cover"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+                (e.target as HTMLImageElement).parentElement!.classList.add('hidden');
+              }}
+            />
+          </div>
           <h3 className="text-white text-2xl font-serif font-bold mb-2 tracking-[0.1em] uppercase">
             RINALDO TORQUATO
           </h3>

@@ -30,15 +30,29 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex flex-col group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
-          <h1 className="text-xl md:text-2xl font-bold text-primary tracking-[0.1em] font-serif transition-colors group-hover:text-gold">
-            RINALDO TORQUATO
-          </h1>
-          <div className="flex items-center gap-2">
-            <div className="h-px w-4 bg-gold"></div>
-            <span className="text-[10px] md:text-xs text-slate-500 uppercase tracking-[0.3em] font-bold">
-              Advocacia Tributária
-            </span>
+        <div className="flex items-center gap-4 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+          <div className="relative h-12 w-12 md:h-14 md:w-14 overflow-hidden rounded-lg shadow-lg shadow-primary/10 group-hover:shadow-gold/20 transition-all duration-500 bg-primary flex items-center justify-center">
+            <img 
+              src="/logo.png" 
+              alt="Rinaldo Torquato Logo" 
+              className="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+                (e.target as HTMLImageElement).parentElement!.classList.add('hidden');
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-lg md:text-xl font-bold text-primary tracking-[0.1em] font-serif transition-colors group-hover:text-gold leading-tight">
+              RINALDO TORQUATO
+            </h1>
+            <div className="flex items-center gap-2">
+              <div className="h-px w-4 bg-gold"></div>
+              <span className="text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">
+                Advocacia Tributária
+              </span>
+            </div>
           </div>
         </div>
 
