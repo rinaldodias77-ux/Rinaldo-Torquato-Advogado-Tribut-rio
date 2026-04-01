@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rinaldo Torquato Advogado | Isenção de IR e Doença Grave</title>
     <meta name="description" content="Advogado especialista em isenção de Imposto de Renda (IR) sobre aposentadoria para portadores de doença grave. Atendimento online e em Cuiabá. Lei 7.713/88." />
-    <meta name="keywords" content="advogado, isenção de imposto de renda, IR, aposentadoria, doença grave, câncer, cardiopatia, Rinaldo Torquato, Cuiabá, direito tributário" />
+    <meta name="keywords" content="advogado, isenção de imposto de renda, IR, aposentadoria, doença grave, câncer, cardiopatia, Rinaldo Torquato, Cuiabá, direito tributário, restituição retroativa IR" />
     <meta name="author" content="Rinaldo Torquato" />
     <meta name="robots" content="index, follow" />
     
@@ -18,12 +18,52 @@
     <meta property="og:description" content="Especialista em isenção de Imposto de Renda para aposentados com doença grave. Solicite sua avaliação e recupere valores dos últimos 5 anos." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://www.rinaldotorquatoadv.com/og-image.jpg" />
+    <meta property="og:image:alt" content="Rinaldo Torquato Advogado - Especialista em Isenção de Imposto de Renda" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rinaldo Torquato Advogado | Isenção de IR" />
     <meta name="twitter:description" content="Pare de pagar IR indevidamente. Atuação especializada na Lei 7.713/88 para aposentados com doença grave." />
     <meta name="twitter:image" content="https://www.rinaldotorquatoadv.com/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Rinaldo Torquato Advogado",
+      "description": "Advogado especialista em isenção de Imposto de Renda (IR) sobre aposentadoria para portadores de doença grave.",
+      "url": "https://www.rinaldotorquatoadv.com/",
+      "telephone": "+55-65-98112-6567",
+      "email": "rinaldotorquatoadv@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Historiador Rubens de Mendonça nº 2.368, Top Tower Center, Sala 406, Bosque da Saúde",
+        "addressLocality": "Cuiabá",
+        "addressRegion": "MT",
+        "postalCode": "78050-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -15.5841,
+        "longitude": -56.0744
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "image": "https://www.rinaldotorquatoadv.com/og-image.jpg"
+    }
+    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,28 +73,40 @@
           extend: {
             colors: {
               primary: {
-                DEFAULT: '#0f172a', // Slate 900 (Deep Blue/Black)
+                DEFAULT: '#0f172a', // Slate 900
                 light: '#1e293b',   // Slate 800
+                dark: '#020617',    // Slate 950
               },
               accent: {
                 DEFAULT: '#2563eb', // Blue 600
                 hover: '#1d4ed8',   // Blue 700
+              },
+              gold: {
+                DEFAULT: '#c5a059', // Sophisticated Gold
+                light: '#d4b982',
+                dark: '#a6823d',
               }
             },
             fontFamily: {
               sans: ['Inter', 'system-ui', 'sans-serif'],
-              serif: ['Merriweather', 'serif'],
+              serif: ['Playfair Display', 'serif'],
             }
           }
         }
       }
     </script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
       body { font-family: 'Inter', sans-serif; }
-      h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
       html { scroll-behavior: smooth; }
+      .glass {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .text-balance { text-wrap: balance; }
     </style>
   <script type="importmap">
 {

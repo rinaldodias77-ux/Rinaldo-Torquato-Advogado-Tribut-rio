@@ -9,7 +9,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: 'Preciso apresentar laudo médico recente?',
-    answer: 'Não necessariamente. A lei não exige contemporaneidade dos sintomas da doença ou que o laudo médico seja atual, bastando comprovar que o aposentado foi acometido pela doença prevista em lei em algum momento da vida.'
+    answer: 'Não necessariamente. A lei não exige contemporaneidade dos sintomas ou que o laudo médico seja atual, bastando comprovar que o aposentado foi acometido pela doença legalmente prevista em algum momento da vida, independentemente de remissão ou tratamento da doença.'
   },
   {
     question: 'A isenção vale para rendimentos de trabalho?',
@@ -17,7 +17,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: 'Quanto tempo demora o processo?',
-    answer: 'Depende do caso. A via administrativa tende a ser mais rápida, e a judicial varia conforme o tribunal e a complexidade do caso.'
+    answer: 'Depende de cada caso. A via administrativa tende a ser mais lenta e burocrática, e a judicial mais célere e rápida, variando conforme o Poder Judiciário local.'
   },
   {
     question: 'Posso pedir valores retroativos?',
@@ -25,7 +25,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: 'O atendimento é online ou presencial?',
-    answer: 'O procedimento de atendimento pode ser feito tanto digitalmente (para todo o Brasil) quanto na forma presencial em Cuiabá-MT.'
+    answer: 'O atendimento pode ser feito virtualmente para todo o Brasil ou na forma presencial em Cuiabá-MT. Marque um horário via Whatsapp.'
   }
 ];
 
@@ -37,35 +37,54 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12 font-serif">
-          Perguntas Frequentes
-        </h2>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-gold"></div>
+            <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase">
+              Dúvidas Comuns
+            </span>
+            <div className="h-px w-8 bg-gold"></div>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">Perguntas Frequentes</h2>
+        </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
+        <div className="max-w-4xl mx-auto space-y-4">
           {faqData.map((faq, index) => (
             <div 
               key={index} 
-              className="border border-gray-200 rounded-lg overflow-hidden transition-all duration-200 hover:border-gray-300"
+              className={`group border rounded-2xl overflow-hidden transition-all duration-500 ${
+                openIndex === index 
+                  ? 'border-gold/30 shadow-xl shadow-gold/5 bg-slate-50/50' 
+                  : 'border-slate-100 hover:border-gold/20 bg-white'
+              }`}
             >
               <button
-                className="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition-colors"
+                className="w-full flex justify-between items-center p-6 md:p-8 text-left transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-lg font-medium text-primary pr-4">{faq.question}</span>
-                {openIndex === index ? (
-                  <Minus className="text-accent flex-shrink-0" />
-                ) : (
-                  <Plus className="text-gray-400 flex-shrink-0" />
-                )}
+                <span className={`text-lg md:text-xl font-bold transition-colors pr-6 ${openIndex === index ? 'text-gold' : 'text-primary group-hover:text-gold'}`}>
+                  {faq.question}
+                </span>
+                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${openIndex === index ? 'bg-gold text-primary-dark rotate-180' : 'bg-slate-100 text-slate-400 group-hover:bg-gold/20 group-hover:text-gold'}`}>
+                  {openIndex === index ? (
+                    <Minus size={16} />
+                  ) : (
+                    <Plus size={16} />
+                  )}
+                </div>
               </button>
               
-              {openIndex === index && (
-                <div className="p-5 bg-gray-50 border-t border-gray-100 text-gray-700 leading-relaxed">
+              <div 
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="p-6 md:p-8 pt-0 text-slate-600 text-lg font-light leading-relaxed border-t border-slate-100/50">
                   {faq.answer}
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

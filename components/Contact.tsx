@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
     setStatus('submitting');
 
     // Usando FormSubmit para envio de e-mails universal (funciona no Cloudflare)
-    fetch("https://formsubmit.co/ajax/rinaldodias77@gmail.com", {
+    fetch("https://formsubmit.co/ajax/rinaldotorquatoadv@gmail.com", {
       method: "POST",
       headers: { 
         "Content-Type": "application/json",
@@ -48,49 +48,59 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contato" className="py-20 bg-primary-light text-white relative">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <section id="contato" className="py-24 bg-primary-dark text-white relative overflow-hidden">
+      {/* Background patterns */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+        <div className="absolute top-[20%] -right-[10%] w-[600px] h-[600px] bg-gold rounded-full blur-[150px]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           
           <div>
-            <span className="text-accent font-semibold tracking-wider text-sm uppercase">Fale Comigo</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 font-serif">Atendimento Humanizado e Sigiloso</h2>
-            <p className="text-gray-300 mb-10 text-lg">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="h-px w-8 bg-gold"></div>
+              <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase">
+                Fale Conosco
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">Atendimento Humanizado e Sigiloso</h2>
+            <p className="text-slate-400 mb-12 text-xl font-light leading-relaxed">
               Entre em contato para agendar uma consulta ou tirar suas dúvidas sobre a isenção de IR.
             </p>
 
-            <div className="space-y-6">
-               <div className="flex items-start gap-4">
-                 <div className="bg-primary p-3 rounded-full border border-gray-700">
-                   <Phone className="text-accent" size={24} />
+            <div className="space-y-10">
+               <div className="flex items-start gap-6 group">
+                 <div className="w-14 h-14 bg-primary rounded-xl border border-slate-800 flex items-center justify-center group-hover:border-gold/50 transition-all duration-500">
+                   <Phone className="text-gold" size={24} />
                  </div>
                  <div>
-                   <h4 className="font-semibold text-lg">Telefone / WhatsApp</h4>
-                   <a href="https://wa.me/5565981126567" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                   <h4 className="font-bold text-slate-200 uppercase tracking-widest text-xs mb-2">Telefone / WhatsApp</h4>
+                   <a href="https://wa.me/5565981126567" target="_blank" rel="noopener noreferrer" className="text-xl text-slate-300 hover:text-gold transition-colors font-medium">
                      (65) 98112-6567
                    </a>
                  </div>
                </div>
 
-               <div className="flex items-start gap-4">
-                 <div className="bg-primary p-3 rounded-full border border-gray-700">
-                   <Mail className="text-accent" size={24} />
+               <div className="flex items-start gap-6 group">
+                 <div className="w-14 h-14 bg-primary rounded-xl border border-slate-800 flex items-center justify-center group-hover:border-gold/50 transition-all duration-500">
+                   <Mail className="text-gold" size={24} />
                  </div>
                  <div>
-                   <h4 className="font-semibold text-lg">E-mail</h4>
-                   <a href="mailto:rinaldodias77@gmail.com" className="text-gray-300 hover:text-white transition-colors">
-                     rinaldodias77@gmail.com
+                   <h4 className="font-bold text-slate-200 uppercase tracking-widest text-xs mb-2">E-mail</h4>
+                   <a href="mailto:rinaldotorquatoadv@gmail.com" className="text-xl text-slate-300 hover:text-gold transition-colors font-medium">
+                     rinaldotorquatoadv@gmail.com
                    </a>
                  </div>
                </div>
 
-               <div className="flex items-start gap-4">
-                 <div className="bg-primary p-3 rounded-full border border-gray-700">
-                   <MapPin className="text-accent" size={24} />
+               <div className="flex items-start gap-6 group">
+                 <div className="w-14 h-14 bg-primary rounded-xl border border-slate-800 flex items-center justify-center group-hover:border-gold/50 transition-all duration-500">
+                   <MapPin className="text-gold" size={24} />
                  </div>
                  <div>
-                   <h4 className="font-semibold text-lg">Escritório</h4>
-                   <p className="text-gray-300">
+                   <h4 className="font-bold text-slate-200 uppercase tracking-widest text-xs mb-2">Escritório</h4>
+                   <p className="text-lg text-slate-300 leading-relaxed font-light">
                      Av. Historiador Rubens de Mendonça nº 2.368<br/>
                      Top Tower Center, Sala 406<br/>
                      Bosque da Saúde, Cuiabá - MT<br/>
@@ -100,12 +110,12 @@ const Contact: React.FC = () => {
                </div>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-14">
               <a 
                 href="https://wa.me/5565981126567"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-5 px-10 rounded-xl transition-all shadow-2xl shadow-green-900/20 transform hover:-translate-y-1"
               >
                 <MessageCircleIcon />
                 Falar agora pelo WhatsApp
@@ -113,21 +123,21 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl text-gray-800 shadow-xl">
-            <h3 className="text-2xl font-bold mb-6 text-primary">Envie sua mensagem</h3>
+          <div className="bg-white p-10 md:p-14 rounded-3xl text-slate-800 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.3)] border border-slate-100">
+            <h3 className="text-3xl font-bold mb-8 text-primary tracking-tight">Envie sua mensagem</h3>
             
             {status === 'success' ? (
-              <div className="flex flex-col items-center justify-center py-10 text-center space-y-4 animate-fadeIn">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-10 h-10 text-green-600" />
+              <div className="flex flex-col items-center justify-center py-12 text-center space-y-6 animate-fadeIn">
+                <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center">
+                  <CheckCircle className="w-12 h-12 text-green-600" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-800">Mensagem Enviada!</h4>
-                <p className="text-gray-600">
+                <h4 className="text-2xl font-bold text-slate-900">Mensagem Enviada!</h4>
+                <p className="text-slate-600 text-lg font-light">
                   Obrigado pelo contato. Recebi sua mensagem e retornarei o mais breve possível.
                 </p>
                 <button 
                   onClick={() => setStatus('idle')}
-                  className="mt-4 text-accent font-semibold hover:underline"
+                  className="mt-6 text-gold font-bold uppercase tracking-widest text-xs hover:underline"
                 >
                   Enviar outra mensagem
                 </button>
@@ -135,10 +145,10 @@ const Contact: React.FC = () => {
             ) : (
               <form 
                 onSubmit={handleSubmit} 
-                className="space-y-5" 
+                className="space-y-6" 
               >
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                  <label htmlFor="name" className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Nome Completo</label>
                   <input
                     type="text"
                     id="name"
@@ -146,14 +156,14 @@ const Contact: React.FC = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+                    className="w-full px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold/20 focus:border-gold outline-none transition-all bg-slate-50/50"
                     placeholder="Seu nome"
                   />
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                    <label htmlFor="email" className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">E-mail</label>
                     <input
                       type="email"
                       id="email"
@@ -161,12 +171,12 @@ const Contact: React.FC = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+                      className="w-full px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold/20 focus:border-gold outline-none transition-all bg-slate-50/50"
                       placeholder="seu@email.com"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                    <label htmlFor="phone" className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Telefone</label>
                     <input
                       type="tel"
                       id="phone"
@@ -174,14 +184,14 @@ const Contact: React.FC = () => {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+                      className="w-full px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold/20 focus:border-gold outline-none transition-all bg-slate-50/50"
                       placeholder="(00) 00000-0000"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Descrição do Caso</label>
+                  <label htmlFor="message" className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Descrição do Caso</label>
                   <textarea
                     id="message"
                     name="message"
@@ -189,13 +199,13 @@ const Contact: React.FC = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+                    className="w-full px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold/20 focus:border-gold outline-none transition-all bg-slate-50/50"
                     placeholder="Descreva brevemente sua situação..."
                   />
                 </div>
 
                 {status === 'error' && (
-                  <div className="p-3 bg-red-100 text-red-700 rounded-lg text-sm">
+                  <div className="p-4 bg-red-50 text-red-700 rounded-xl text-sm border border-red-100 font-medium">
                     Ocorreu um erro ao enviar. Por favor, tente novamente ou use o WhatsApp.
                   </div>
                 )}
@@ -203,10 +213,10 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full bg-primary hover:bg-primary-light text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-5 rounded-xl transition-all flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-primary/20 transform hover:-translate-y-1"
                 >
                   {status === 'submitting' ? 'Enviando...' : 'Enviar Mensagem'}
-                  {!status.includes('submitting') && <Send size={18} />}
+                  {!status.includes('submitting') && <Send size={18} className="text-gold" />}
                 </button>
               </form>
             )}
