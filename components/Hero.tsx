@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="https://wa.me/5565996931198?text=Olá,%20gostaria%20de%20saber%20sobre%20a%20restituição%20dos%20últimos%205%20anos."
+              href="https://wa.me/5565981126567?text=Olá,%20gostaria%20de%20saber%20sobre%20a%20restituição%20dos%20últimos%205%20anos."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"

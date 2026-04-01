@@ -45,7 +45,7 @@ const Rights: React.FC = () => {
           </p>
           
           <a 
-            href="https://wa.me/5565996931198?text=Olá, gostaria de saber se tenho direito à isenção de IR."
+            href="https://wa.me/5565981126567?text=Olá, gostaria de saber se tenho direito à isenção de IR."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors"

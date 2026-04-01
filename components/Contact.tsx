@@ -66,8 +66,8 @@ const Contact: React.FC = () => {
                  </div>
                  <div>
                    <h4 className="font-semibold text-lg">Telefone / WhatsApp</h4>
-                   <a href="https://wa.me/5565996931198" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                     (65) 99693-1198
+                   <a href="https://wa.me/5565981126567" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                     (65) 98112-6567
                    </a>
                  </div>
                </div>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
 
             <div className="mt-10">
               <a 
-                href="https://wa.me/5565996931198"
+                href="https://wa.me/5565981126567"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"

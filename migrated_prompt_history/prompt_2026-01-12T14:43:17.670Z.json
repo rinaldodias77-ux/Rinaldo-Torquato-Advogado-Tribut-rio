@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1004,
+    "author": "user",
+    "payload": {
+      "type": "text",
+      "text": "Troque molestia por doença.",
+      "files": [],
+      "fileUploads": [],
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228540,
+      "nanos": 788000000
+    }
+  },
+  {
+    "id": 1005,
+    "author": "model",
+    "payload": {
+      "type": "thinking",
+      "text": "**Considering Content Changes**\n\nI'm currently focused on the website content for Rinaldo Torquato. My priority is the terminology update; \"moléstia\" is out, \"doença\" is in. Specifically, I'm working through instances of \"moléstia grave,\" replacing it with \"doença grave\" to reflect the requested change accurately across the application.\n\n\n**Implementing Terminology Updates**\n\nI've moved beyond general terminology, and am systematically scanning files for \"moléstia\" and \"Moléstia,\" case-insensitively, and implementing replacement with \"doença\" and \"Doença\" respectively. I've flagged each file that needs review, including replacements of \"moléstia grave\" with \"doença grave\" as requested. I'm focusing on the global updates, then cross-referencing and confirming the changes in each file, like `metadata.json`, with the goal of consistency and accuracy.\n\n\n**Detailing Content Adjustments**\n\nOkay, I'm now making direct content edits. I'm starting with `metadata.json` to make global changes. Then, I will address `index.html`, and each React component: `Hero`, `About`, `Rights`, `Guidance`, `FAQ`, and `Footer`. I'm replacing \"moléstia grave\" with \"doença grave\", and also \"moléstias\" with \"doenças\" throughout each file. I need to be careful with case sensitivity. I should also note the website instructions mentioned \"Crie um site profissional, minimalista...\" at the beginning but then provided the code.\n\n\n**Confirming Text Replacement**\n\nI'm focused on the \"Troque molestia por doença\" directive, which translates to replacing \"moléstia\" with \"doença\". I'm specifically targeting \"moléstia grave\" and \"moléstias graves,\" replacing them with \"doença grave\" and \"doenças graves.\" I will implement these changes within `metadata.json`, `index.html`, and the component files: `Hero.tsx`, `About.tsx`, `Rights.tsx`, `Guidance.tsx`, `FAQ.tsx`, and `Footer.tsx`. Additionally, I'll address any inconsistencies like \"molestia\" typos.\n\n\n",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228540,
+      "nanos": 788000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228560,
+      "nanos": 381000000
+    }
+  },
+  {
+    "id": 1006,
+    "author": "model",
+    "payload": {
+      "type": "generationTable",
+      "entries": [
+        {
+          "path": "metadata.json",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Trocar \"moléstia grave\" por \"doença grave\" na descrição.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "{\n  \"name\": \"Rinaldo Torquato Advogado Tributário\",\n  \"description\": \"Site institucional para escritório de advocacia especializado em isenção de Imposto de Renda para aposentados com doença grave.\",\n  \"requestFramePermissions\": []\n}"
+            }
+          ]
+        },
+        {
+          "path": "index.html",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Atualizar metadados para substituir \"moléstia grave\" por \"doença grave\".",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"google-site-verification\" content=\"googleb0f366143b9b9b24\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <title>Rinaldo Torquato Advogado | Isenção de IR e Doença Grave</title>\n    <meta name=\"description\" content=\"Advogado especialista em isenção de Imposto de Renda (IR) sobre aposentadoria para portadores de doença grave. Atendimento online e em Cuiabá. Lei 7.713/88.\" />\n    <meta name=\"keywords\" content=\"advogado, isenção de imposto de renda, IR, aposentadoria, doença grave, câncer, cardiopatia, Rinaldo Torquato, Cuiabá, direito tributário\" />\n    <meta name=\"author\" content=\"Rinaldo Torquato\" />\n    <meta name=\"robots\" content=\"index, follow\" />\n    \n    <!-- Configurações de Domínio Oficial (SEO) -->\n    <link rel=\"canonical\" href=\"https://www.rinaldotorquatoadv.com/\" />\n    <meta property=\"og:site_name\" content=\"Rinaldo Torquato Advogado\" />\n    <meta property=\"og:url\" content=\"https://www.rinaldotorquatoadv.com/\" />\n    <meta property=\"og:title\" content=\"Rinaldo Torquato Advogado | Isenção de IR\" />\n    <meta property=\"og:description\" content=\"Especialista em isenção de Imposto de Renda para aposentados com doença grave. Solicite sua avaliação e recupere valores dos últimos 5 anos.\" />\n    <meta property=\"og:type\" content=\"website\" />\n    <meta property=\"og:image\" content=\"https://www.rinaldotorquatoadv.com/og-image.jpg\" />\n    \n    <!-- Twitter Card -->\n    <meta name=\"twitter:card\" content=\"summary_large_image\" />\n    <meta name=\"twitter:title\" content=\"Rinaldo Torquato Advogado | Isenção de IR\" />\n    <meta name=\"twitter:description\" content=\"Pare de pagar IR indevidamente. Atuação especializada na Lei 7.713/88 para aposentados com doença grave.\" />\n    <meta name=\"twitter:image\" content=\"https://www.rinaldotorquatoadv.com/og-image.jpg\" />\n    \n    <!-- Tailwind CSS -->\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <script>\n      tailwind.config = {\n        theme: {\n          extend: {\n            colors: {\n              primary: {\n                DEFAULT: '#0f172a', // Slate 900 (Deep Blue/Black)\n                light: '#1e293b',   // Slate 800\n              },\n              accent: {\n                DEFAULT: '#2563eb', // Blue 600\n                hover: '#1d4ed8',   // Blue 700\n              }\n            },\n            fontFamily: {\n              sans: ['Inter', 'system-ui', 'sans-serif'],\n              serif: ['Merriweather', 'serif'],\n            }\n          }\n        }\n      }\n    </script>\n    <!-- Fonts -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n    <style>\n      body { font-family: 'Inter', sans-serif; }\n      h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }\n      html { scroll-behavior: smooth; }\n    </style>\n  <script type=\"importmap\">\n{\n  \"imports\": {\n    \"react\": \"https://esm.sh/react@18.2.0\",\n    \"react-dom/client\": \"https://esm.sh/react-dom@18.2.0/client\",\n    \"react/\": \"https://esm.sh/react@18.2.0/\",\n    \"lucide-react\": \"https://esm.sh/lucide-react@0.344.0\",\n    \"react-dom/\": \"https://esm.sh/react-dom@18.2.0/\"\n  }\n}\n</script>\n</head>\n  <body>\n    <div id=\"root\"></div>\n    <script type=\"module\" src=\"/index.tsx\"></script>\n  </body>\n</html>"
+            }
+          ]
+        },
+        {
+          "path": "components/Hero.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"Moléstia Grave\" por \"Doença Grave\" no título da seção Hero.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\nimport { ArrowRight, MessageCircle, Clock, CheckCircle2 } from 'lucide-react';\n\nconst Hero: React.FC = () => {\n  return (\n    <section id=\"inicio\" className=\"relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gray-50 overflow-hidden\">\n      <div className=\"container mx-auto px-4 md:px-6\">\n        <div className=\"max-w-4xl mx-auto text-center\">\n          \n          {/* Badge de Destaque - Crédito Tributário */}\n          <div className=\"inline-flex items-center gap-2 bg-blue-100 text-accent px-4 py-2 rounded-full mb-6 animate-fadeIn hover:bg-blue-200 transition-colors cursor-default\">\n            <Clock size={16} />\n            <span className=\"text-sm font-bold tracking-wide uppercase\">Recupere valores dos últimos 5 anos</span>\n          </div>\n\n          <h1 className=\"text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight\">\n            Isenção de Imposto de Renda para <span className=\"text-accent\">Aposentados</span> Portadores de Doença Grave\n          </h1>\n          \n          <p className=\"text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed\">\n            Pare de pagar Imposto de Renda indevidamente. Atuação especializada na Lei 7.713/88 para garantir sua isenção e a <strong>restituição do que foi pago a mais</strong>.\n          </p>\n\n          <div className=\"flex flex-wrap justify-center gap-4 mb-10 text-gray-600 text-sm md:text-base\">\n            <div className=\"flex items-center gap-2\">\n              <CheckCircle2 className=\"text-green-500 w-5 h-5\" />\n              <span>Análise preliminar gratuita</span>\n            </div>\n            <div className=\"flex items-center gap-2\">\n              <CheckCircle2 className=\"text-green-500 w-5 h-5\" />\n              <span>Atendimento 100% Online</span>\n            </div>\n            <div className=\"flex items-center gap-2\">\n              <CheckCircle2 className=\"text-green-500 w-5 h-5\" />\n              <span>Sem burocracia</span>\n            </div>\n          </div>\n          \n          <div className=\"flex flex-col sm:flex-row justify-center gap-4\">\n            <a \n              href=\"https://wa.me/5565996931198?text=Olá,%20gostaria%20de%20saber%20sobre%20a%20restituição%20dos%20últimos%205%20anos.\"\n              target=\"_blank\"\n              rel=\"noopener noreferrer\"\n              className=\"group flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1\"\n            >\n              Quero Analisar Meu Caso\n              <ArrowRight className=\"w-5 h-5 group-hover:translate-x-1 transition-transform\" />\n            </a>\n            \n            <a \n              href=\"#sobre\"\n              className=\"flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-accent text-gray-700 hover:text-accent px-8 py-4 rounded-lg text-lg font-semibold transition-colors\"\n            >\n              Saiba Mais\n            </a>\n          </div>\n          \n          <p className=\"mt-8 text-xs text-gray-400\">\n            Fundamento Legal: Artigo 6º, inciso XIV, da Lei 7.713/88\n          </p>\n        </div>\n      </div>\n      \n      {/* Abstract Background Element */}\n      <div className=\"absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-30 pointer-events-none\">\n        <div className=\"absolute -top-[20%] -right-[10%] w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl\"></div>\n        <div className=\"absolute top-[40%] -left-[10%] w-[400px] h-[400px] bg-gray-200 rounded-full blur-3xl\"></div>\n      </div>\n    </section>\n  );\n};\n\nexport default Hero;"
+            }
+          ]
+        },
+        {
+          "path": "components/About.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"moléstias graves\" por \"doenças graves\" na seção Sobre.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\nimport { Scale, FileCheck, ShieldCheck } from 'lucide-react';\n\nconst About: React.FC = () => {\n  return (\n    <section id=\"sobre\" className=\"py-20 bg-white\">\n      <div className=\"container mx-auto px-4 md:px-6\">\n        <div className=\"flex flex-col lg:flex-row items-center gap-12 lg:gap-20\">\n          \n          <div className=\"lg:w-1/2 relative\">\n             {/* Imagem profissional ilustrativa: Detalhes Jurídicos / Análise */}\n             <div className=\"aspect-[3/4] rounded-lg overflow-hidden shadow-2xl bg-gray-200 relative\">\n                <img \n                  src=\"https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?q=80&w=1000&auto=format&fit=crop\" \n                  alt=\"Mesa de escritório com documentos, óculos e caneta representando análise jurídica minuciosa\" \n                  className=\"w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700\"\n                />\n                <div className=\"absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-8\">\n                  <div>\n                    <h3 className=\"text-white text-2xl font-serif font-bold\">Dr. Rinaldo Torquato</h3>\n                    <p className=\"text-white/90 font-medium\">Advogado Tributarista</p>\n                  </div>\n                </div>\n             </div>\n             {/* Decorative element */}\n             <div className=\"absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-full -z-10\"></div>\n          </div>\n\n          <div className=\"lg:w-1/2\">\n            <div className=\"inline-block px-3 py-1 bg-blue-50 text-accent text-sm font-semibold rounded-full mb-4\">\n              SOBRE O ADVOGADO\n            </div>\n            <h2 className=\"text-3xl md:text-4xl font-bold text-primary mb-6 font-serif\">\n              Especialista na Defesa dos Direitos dos Aposentados\n            </h2>\n            \n            <div className=\"space-y-6 text-gray-600 text-lg leading-relaxed\">\n              <p>\n                Sou advogado atuante principalmente em pedidos de <strong>isenção de Imposto de Renda</strong> sobre proventos de aposentadoria para pessoas portadoras de doenças graves, conforme previsão legal do artigo 6º, inciso XIV, da Lei 7.713/88.\n              </p>\n              <p>\n                Meu trabalho é focado em orientar aposentados sobre seus direitos e conduzir todo o processo administrativo ou judicial para garantir que a isenção seja reconhecida da forma mais rápida e segura possível.\n              </p>\n              <p>\n                Atendimento individual, sigiloso e com linguagem simples, prezando sempre pelo acolhimento humano.\n              </p>\n            </div>\n\n            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-10\">\n              <div className=\"flex flex-col items-center text-center p-4 bg-gray-50 rounded-lg\">\n                <Scale className=\"text-accent mb-3 w-8 h-8\" />\n                <span className=\"font-semibold text-primary\">Atuação Especializada</span>\n              </div>\n              <div className=\"flex flex-col items-center text-center p-4 bg-gray-50 rounded-lg\">\n                <FileCheck className=\"text-accent mb-3 w-8 h-8\" />\n                <span className=\"font-semibold text-primary\">Análise Minuciosa</span>\n              </div>\n              <div className=\"flex flex-col items-center text-center p-4 bg-gray-50 rounded-lg\">\n                <ShieldCheck className=\"text-accent mb-3 w-8 h-8\" />\n                <span className=\"font-semibold text-primary\">Sigilo Absoluto</span>\n              </div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default About;"
+            }
+          ]
+        },
+        {
+          "path": "components/Rights.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"doenças graves\" e referências a \"moléstia grave\" na seção de Direitos.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\nimport { CheckCircle2, ArrowRight } from 'lucide-react';\nimport { Disease } from '../types';\n\nconst diseases: Disease[] = [\n  { name: 'Cardiopatia grave' },\n  { name: 'Neoplasia maligna (câncer)' },\n  { name: 'Doença de Parkinson' },\n  { name: 'Doença de Alzheimer' },\n  { name: 'Esclerose múltipla' },\n  { name: 'Hepatopatia grave' },\n  { name: 'Nefropatia grave' },\n  { name: 'Tuberculose ativa' },\n  { name: 'Paralisia irreversível e incapacitante' },\n  { name: 'AIDS' },\n  { name: 'Outras previstas em lei' },\n];\n\nconst Rights: React.FC = () => {\n  return (\n    <section id=\"direitos\" className=\"py-20 bg-primary text-white\">\n      <div className=\"container mx-auto px-4 md:px-6\">\n        <div className=\"text-center mb-16\">\n          <h2 className=\"text-3xl md:text-4xl font-bold mb-4 font-serif\">Quem tem direito à isenção?</h2>\n          <p className=\"text-gray-300 max-w-2xl mx-auto text-lg\">\n            Conforme a Lei 7.713/88, aposentados portadores de doenças graves podem obter isenção do Imposto de Renda sobre seus proventos.\n          </p>\n        </div>\n\n        <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto\">\n          {diseases.map((disease, index) => (\n            <div \n              key={index}\n              className=\"flex items-center gap-3 bg-primary-light p-4 rounded-lg border border-gray-700 hover:border-accent transition-colors\"\n            >\n              <CheckCircle2 className=\"text-accent min-w-[24px]\" />\n              <span className=\"font-medium text-lg\">{disease.name}</span>\n            </div>\n          ))}\n        </div>\n\n        <div className=\"mt-12 bg-white/10 rounded-xl p-6 md:p-8 max-w-4xl mx-auto text-center border border-white/20\">\n          <p className=\"text-lg md:text-xl font-medium mb-6\">\n            ⚠️ <span className=\"font-bold text-yellow-400\">Observação Importante:</span> A isenção não depende de laudo recente ou contemporaneidade dos sintomas, e o direito pode ser reconhecido mesmo que a doença tenha sido descoberta no passado.\n          </p>\n          \n          <a \n            href=\"https://wa.me/5565996931198?text=Olá, gostaria de saber se tenho direito à isenção de IR.\"\n            target=\"_blank\"\n            rel=\"noopener noreferrer\"\n            className=\"inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors\"\n          >\n            Descobrir se tenho direito\n            <ArrowRight size={20} />\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Rights;"
+            }
+          ]
+        },
+        {
+          "path": "components/Guidance.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"moléstia grave\" por \"doença grave\" na seção de Orientações.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\nimport { FileText, Stethoscope, History, Scale, TrendingUp } from 'lucide-react';\nimport { GuidanceItem } from '../types';\n\nconst guidanceItems: GuidanceItem[] = [\n  {\n    id: 1,\n    title: 'Como funciona a isenção?',\n    summary: 'A isenção é um direito previsto no Art. 6º, inciso XIV, da Lei nº 7.713/88. É necessário preencher dois requisitos: 1. Estar aposentado; 2. Possuir uma das doenças previstas no rol legal, apresentando documentos médicos comprobatórios.',\n    iconName: 'FileText'\n  },\n  {\n    id: 2,\n    title: 'Preciso de laudo oficial?',\n    summary: 'Não. Conforme a Súmula 598 do STJ, é possível o reconhecimento da isenção mesmo sem laudo oficial, desde que o conjunto probatório (exames, atestados, tomografias) seja robusto para comprovar a doença.',\n    iconName: 'Stethoscope'\n  },\n  {\n    id: 3,\n    title: 'Dinheiro de volta (5 Anos)',\n    summary: 'Sim, é possível recuperar valores pagos ou retidos na fonte dos últimos 5 (cinco) anos. Esse \"crédito tributário\" volta para o seu bolso com correção monetária (Taxa Selic).',\n    iconName: 'History'\n  },\n  {\n    id: 4,\n    title: 'Diferença: Isenção vs Imunidade',\n    summary: 'Imunidade é limitação constitucional ao poder de tributar. Isenção é dispensa legal do pagamento. Aposentados com doença grave têm isenção legal conforme a Lei 7.713/88.',\n    iconName: 'Scale'\n  }\n];\n\nconst getIcon = (name: string) => {\n  switch (name) {\n    case 'FileText': return <FileText className=\"w-8 h-8 text-accent\" />;\n    case 'Stethoscope': return <Stethoscope className=\"w-8 h-8 text-accent\" />;\n    case 'History': return <TrendingUp className=\"w-8 h-8 text-green-600\" />; // Ícone de gráfico subindo para dinheiro\n    case 'Scale': return <Scale className=\"w-8 h-8 text-accent\" />;\n    default: return <FileText className=\"w-8 h-8 text-accent\" />;\n  }\n};\n\nconst Guidance: React.FC = () => {\n  return (\n    <section id=\"orientacoes\" className=\"py-20 bg-gray-50\">\n      <div className=\"container mx-auto px-4 md:px-6\">\n        <div className=\"text-center mb-16\">\n          <span className=\"text-accent font-semibold tracking-wider text-sm uppercase\">Informações Jurídicas</span>\n          <h2 className=\"text-3xl md:text-4xl font-bold text-primary mt-2 font-serif\">Orientações Importantes</h2>\n        </div>\n\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\n          {guidanceItems.map((item) => {\n             const isHighlight = item.id === 3; // Destaque para o item de dinheiro de volta\n             \n             return (\n              <div \n                key={item.id} \n                className={`p-8 rounded-xl transition-all duration-300 ${\n                  isHighlight \n                    ? 'bg-white border-2 border-green-100 shadow-lg scale-[1.02] relative overflow-hidden' \n                    : 'bg-white shadow-sm hover:shadow-md border border-gray-100'\n                }`}\n              >\n                {isHighlight && (\n                  <div className=\"absolute top-0 right-0 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-bl-lg\">\n                    CRÉDITO A RECEBER\n                  </div>\n                )}\n                \n                <div className={`mb-6 w-16 h-16 rounded-lg flex items-center justify-center ${isHighlight ? 'bg-green-50' : 'bg-blue-50'}`}>\n                  {getIcon(item.iconName)}\n                </div>\n                <h3 className=\"text-xl font-bold text-primary mb-4\">{item.title}</h3>\n                <p className=\"text-gray-600 leading-relaxed text-justify\">\n                  {item.summary}\n                </p>\n              </div>\n            );\n          })}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Guidance;"
+            }
+          ]
+        },
+        {
+          "path": "components/FAQ.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"moléstia grave\" por \"doença grave\" na seção FAQ.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React, { useState } from 'react';\nimport { Plus, Minus } from 'lucide-react';\nimport { FAQItem } from '../types';\n\nconst faqData: FAQItem[] = [\n  {\n    question: 'Preciso estar aposentado para ter direito à isenção?',\n    answer: 'Sim, a isenção prevista no artigo 6º, inciso XIV da Lei 7.713/88, é válida para proventos de aposentadoria. Pensionistas também podem ter direito.'\n  },\n  {\n    question: 'Preciso apresentar laudo médico recente?',\n    answer: 'Não necessariamente. A lei não exige contemporaneidade dos sintomas da doença ou que o laudo médico seja atual, bastando comprovar que o aposentado foi acometido pela doença prevista em lei em algum momento da vida.'\n  },\n  {\n    question: 'A isenção vale para rendimentos de trabalho?',\n    answer: 'Não. A isenção refere-se especificamente aos proventos de aposentadoria, reforma ou pensão, e não abrange os rendimentos trabalhistas (salários de quem continua trabalhando).'\n  },\n  {\n    question: 'Quanto tempo demora o processo?',\n    answer: 'Depende do caso. A via administrativa tende a ser mais rápida, e a judicial varia conforme o tribunal e a complexidade do caso.'\n  },\n  {\n    question: 'Posso pedir valores retroativos?',\n    answer: 'Sim. Até 5 anos, conforme prescrição quinquenal da legislação tributária.'\n  },\n  {\n    question: 'O atendimento é online ou presencial?',\n    answer: 'O procedimento de atendimento pode ser feito tanto digitalmente (para todo o Brasil) quanto na forma presencial em Cuiabá-MT.'\n  }\n];\n\nconst FAQ: React.FC = () => {\n  const [openIndex, setOpenIndex] = useState<number | null>(null);\n\n  const toggleFAQ = (index: number) => {\n    setOpenIndex(openIndex === index ? null : index);\n  };\n\n  return (\n    <section id=\"faq\" className=\"py-20 bg-white\">\n      <div className=\"container mx-auto px-4 md:px-6\">\n        <h2 className=\"text-3xl md:text-4xl font-bold text-center text-primary mb-12 font-serif\">\n          Perguntas Frequentes\n        </h2>\n\n        <div className=\"max-w-3xl mx-auto space-y-4\">\n          {faqData.map((faq, index) => (\n            <div \n              key={index} \n              className=\"border border-gray-200 rounded-lg overflow-hidden transition-all duration-200 hover:border-gray-300\"\n            >\n              <button\n                className=\"w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition-colors\"\n                onClick={() => toggleFAQ(index)}\n              >\n                <span className=\"text-lg font-medium text-primary pr-4\">{faq.question}</span>\n                {openIndex === index ? (\n                  <Minus className=\"text-accent flex-shrink-0\" />\n                ) : (\n                  <Plus className=\"text-gray-400 flex-shrink-0\" />\n                )}\n              </button>\n              \n              {openIndex === index && (\n                <div className=\"p-5 bg-gray-50 border-t border-gray-100 text-gray-700 leading-relaxed\">\n                  {faq.answer}\n                </div>\n              )}\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default FAQ;"
+            }
+          ]
+        },
+        {
+          "path": "components/Footer.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Substituir \"moléstia grave\" por \"doença grave\" no rodapé.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\n\nconst Footer: React.FC = () => {\n  const currentYear = new Date().getFullYear();\n\n  return (\n    <footer className=\"bg-primary text-gray-400 py-12 border-t border-gray-800\">\n      <div className=\"container mx-auto px-4 md:px-6 text-center\">\n        <h3 className=\"text-white text-xl font-serif font-bold mb-4 tracking-wider\">\n          RINALDO TORQUATO ADVOGADO\n        </h3>\n        <p className=\"mb-2 font-medium text-white/80\">OAB/MT 33.780/O</p>\n        \n        <div className=\"w-16 h-1 bg-accent mx-auto my-6 rounded-full\"></div>\n        \n        <p className=\"max-w-2xl mx-auto mb-6\">\n          Atuação especializada na solicitação de isenção de Imposto de Renda (IR) em benefício de aposentados portadores de doença grave. Atendimento online para todo o Brasil.\n        </p>\n\n        <p className=\"text-sm mb-8\">\n          Av. Historiador Rubens de Mendonça nº 2.368, Bosque da Saúde<br/>\n          CEP 78050-000 - Cuiabá (MT) - Top Tower Center, Sala 406.\n        </p>\n\n        {/* Aviso Legal Importante para evitar bloqueios de Phishing/Impersonation */}\n        <div className=\"max-w-3xl mx-auto mb-8 p-4 bg-gray-800/50 rounded-lg text-xs text-gray-500 border border-gray-700\">\n          <p>\n            <strong>Aviso Legal:</strong> Este site pertence a um escritório de advocacia privado e não possui qualquer vínculo com a Receita Federal do Brasil ou outros órgãos governamentais. Os serviços prestados são de natureza jurídica privada.\n          </p>\n        </div>\n\n        <div className=\"text-xs text-gray-500 border-t border-gray-800 pt-6\">\n          &copy; {currentYear} <a href=\"https://www.rinaldotorquatoadv.com\" className=\"hover:text-white transition-colors\">Rinaldo Torquato Advogado</a>. Todos os direitos reservados.\n        </div>\n      </div>\n    </footer>\n  );\n};\n\nexport default Footer;"
+            }
+          ]
+        }
+      ]
+    },
+    "createdTimestamp": {
+      "seconds": 1768228560,
+      "nanos": 382000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228561,
+      "nanos": 96000000
+    }
+  },
+  {
+    "id": 1007,
+    "author": "user",
+    "payload": {
+      "type": "text",
+      "text": "As alterações do site no Google ai studio não são automáticas no netfly ?",
+      "files": [],
+      "fileUploads": [],
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228851,
+      "nanos": 734000000
+    }
+  },
+  {
+    "id": 1008,
+    "author": "model",
+    "payload": {
+      "type": "thinking",
+      "text": "**Defining the Query's Scope**\n\nI'm focusing on the user's question about how changes in Google AI Studio relate to Netlify. It seems they want to know if the website updates, for the lawyer's site, are automatically deployed. The user is expecting that any changes on the Google end will be reflected on their Netlify hosted site.\n\n\n**Clarifying the Sync Process**\n\nI've determined the answer: Google AI Studio changes won't automatically update Netlify. I must explain that a CI/CD pipeline (e.g., GitHub integration) is crucial. Normally, users must manually transfer files or utilize copy-paste and push to GitHub, triggering Netlify deployment. I'll highlight the need for a connection or bridge if they expect auto-sync. Also, I need to remind them that I don't control their Netlify account.\n\n\n",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228851,
+      "nanos": 734000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228857,
+      "nanos": 546000000
+    }
+  },
+  {
+    "id": 1009,
+    "author": "model",
+    "payload": {
+      "type": "text",
+      "text": "Não, as alterações que fazemos aqui no ambiente do **Google AI Studio** não são refletidas automaticamente no **Netlify**.\n\nEste ambiente funciona como um editor isolado. Para que as mudanças (como a troca de \"moléstia grave\" para \"doença grave\" que fizemos) apareçam no seu site oficial, você precisa seguir o fluxo de publicação que está utilizando:\n\n1.  **Se você usa GitHub + Netlify:** Você deve copiar os códigos atualizados das janelas acima, salvar nos arquivos correspondentes no seu computador (ou diretamente no GitHub) e fazer um `git push`. O Netlify então detectará a mudança e atualizará o site.\n2.  **Se você faz upload manual (Drag & Drop):** Você precisará baixar os arquivos atualizados e arrastá-los novamente para o painel do Netlify.\n3.  **Se você usa uma ferramenta de exportação direta:** Verifique se ela exige um comando de \"Deploy\" ou \"Publish\".\n\nEm resumo: eu consigo alterar o código aqui no \"projeto\", mas não tenho acesso direto para publicar no seu servidor do Netlify. Você precisa \"levar\" esse código novo para lá.",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228857,
+      "nanos": 546000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228857,
+      "nanos": 695000000
+    }
+  },
+  {
+    "id": 1010,
+    "author": "user",
+    "payload": {
+      "type": "text",
+      "text": "Troque no rodapé \"Atuação especializada na solicitação de isenção de Imposto de Renda (IR) em benefício de aposentados portadores de doença grave.\" por \"Atuação especializada na isenção de Imposto de Renda (IR) para aposentados portadores de doença grave.\"",
+      "files": [],
+      "fileUploads": [],
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228987,
+      "nanos": 112000000
+    }
+  },
+  {
+    "id": 1011,
+    "author": "model",
+    "payload": {
+      "type": "thinking",
+      "text": "**Analyzing Sentence Structure**\n\nOkay, I'm working through the desired change to the sentence. I've pinpointed the `components/Footer.tsx` file and the target phrase. The focus is now on efficiently implementing the reduction, maintaining the core message while making it more concise. I'm aiming for a natural flow.\n\n\n",
+      "cMarkNode": {}
+    },
+    "createdTimestamp": {
+      "seconds": 1768228987,
+      "nanos": 112000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228990,
+      "nanos": 932000000
+    }
+  },
+  {
+    "id": 1012,
+    "author": "model",
+    "payload": {
+      "type": "generationTable",
+      "entries": [
+        {
+          "path": "components/Footer.tsx",
+          "generationType": 1,
+          "isDone": true,
+          "description": "Atualizar frase de descrição no rodapé para uma versão mais direta.",
+          "diffs": [
+            {
+              "target": "",
+              "replacement": "import React from 'react';\n\nconst Footer: React.FC = () => {\n  const currentYear = new Date().getFullYear();\n\n  return (\n    <footer className=\"bg-primary text-gray-400 py-12 border-t border-gray-800\">\n      <div className=\"container mx-auto px-4 md:px-6 text-center\">\n        <h3 className=\"text-white text-xl font-serif font-bold mb-4 tracking-wider\">\n          RINALDO TORQUATO ADVOGADO\n        </h3>\n        <p className=\"mb-2 font-medium text-white/80\">OAB/MT 33.780/O</p>\n        \n        <div className=\"w-16 h-1 bg-accent mx-auto my-6 rounded-full\"></div>\n        \n        <p className=\"max-w-2xl mx-auto mb-6\">\n          Atuação especializada na isenção de Imposto de Renda (IR) para aposentados portadores de doença grave. Atendimento online para todo o Brasil.\n        </p>\n\n        <p className=\"text-sm mb-8\">\n          Av. Historiador Rubens de Mendonça nº 2.368, Bosque da Saúde<br/>\n          CEP 78050-000 - Cuiabá (MT) - Top Tower Center, Sala 406.\n        </p>\n\n        {/* Aviso Legal Importante para evitar bloqueios de Phishing/Impersonation */}\n        <div className=\"max-w-3xl mx-auto mb-8 p-4 bg-gray-800/50 rounded-lg text-xs text-gray-500 border border-gray-700\">\n          <p>\n            <strong>Aviso Legal:</strong> Este site pertence a um escritório de advocacia privado e não possui qualquer vínculo com a Receita Federal do Brasil ou outros órgãos governamentais. Os serviços prestados são de natureza jurídica privada.\n          </p>\n        </div>\n\n        <div className=\"text-xs text-gray-500 border-t border-gray-800 pt-6\">\n          &copy; {currentYear} <a href=\"https://www.rinaldotorquatoadv.com\" className=\"hover:text-white transition-colors\">Rinaldo Torquato Advogado</a>. Todos os direitos reservados.\n        </div>\n      </div>\n    </footer>\n  );\n};\n\nexport default Footer;"
+            }
+          ]
+        }
+      ]
+    },
+    "createdTimestamp": {
+      "seconds": 1768228990,
+      "nanos": 932000000
+    },
+    "doneTimestamp": {
+      "seconds": 1768228994,
+      "nanos": 515000000
+    }
+  }
+]

@@ -51,13 +51,13 @@ const Header: React.FC = () => {
             </a>
           ))}
           <a 
-            href="https://wa.me/5565996931198?text=Ol%C3%A1%20Dr.%20Rinaldo%2C%20gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20sobre%20isen%C3%A7%C3%A3o%20de%20IR."
+            href="https://wa.me/5565981126567?text=Ol%C3%A1%20Dr.%20Rinaldo%2C%20gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20sobre%20isen%C3%A7%C3%A3o%20de%20IR."
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-primary-light transition-colors"
           >
             <Phone size={16} />
-            <span>(65) 99693-1198</span>
+            <span>(65) 98112-6567</span>
           </a>
         </nav>
 
